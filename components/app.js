@@ -4,11 +4,11 @@ import VisibleTodoList from './visibleTodoList/VisibleTodoList';
 import Footer from './footer/Footer';
 
 
-export default () => {
+export default ({params}) => {
     return (
         <div>
             <AddTodo />
-            <VisibleTodoList />
+            <VisibleTodoList filter={params.filter || 'all'}/>
             <Footer />
         </div>
     )

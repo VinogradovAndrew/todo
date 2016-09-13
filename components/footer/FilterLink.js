@@ -37,7 +37,7 @@ import {Link} from 'react-router';
 const FilterLink = ({filter , children}) => (
 
     <Link
-        to={'todo_react/'+(filter === 'all' ? '' : filter)}
+        to={(filter === 'all' ? '' : filter)}
         activeStyle = {{
             textDecoration:'none',
             color:'black'
