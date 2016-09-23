@@ -22,8 +22,7 @@ const addLoggingToDispatch = (store) => {
 };
 
 const configureStore = () => {
-    const persistedState = loadState();
-    const store = createStore(reducer, persistedState);
+    const store = createStore(reducer);
 
 
     store.dispatch = addLoggingToDispatch(store);

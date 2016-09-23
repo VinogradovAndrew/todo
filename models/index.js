@@ -32,6 +32,7 @@ export const fetchTodos = (filter) =>
             case 'completed':
                 return fakeDatabase.todos.filter(t => t.completed);
             default:
-                throw new Eror(`Unknkown filter ${filter}`)
+                throw new Error(`Unknkown filter ${filter}`)
         }
     });
+export default fetchTodos;
