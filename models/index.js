@@ -4,17 +4,17 @@ const fakeDatabase = {
     todos:[
         {
             id:v4(),
-            test:'hey',
+            text:'hey',
             completed:true
         },
         {
             id:v4(),
-            test:'ho',
+            text:'ho',
             completed:true
         },
         {
             id:v4(),
-            test:'lets go',
+            text:'lets go',
             completed:false
         }
     ]
